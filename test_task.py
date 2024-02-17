@@ -1,9 +1,8 @@
 from selene import browser, be, have
 import pytest
 
-@pytest.fixture
-def browser_size():
-    pass
+
+
 
 def test_search():
     browser.open('https://google.com')
