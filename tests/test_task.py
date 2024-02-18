@@ -9,3 +9,5 @@ def test_search_positive():
 
 def test_search_negative():
     browser.open("/")
+    browser.element('[name="q"]').should(be.blank).type('aklrjlw etrryhtkrhkrt').press_enter()
+    browser.element('[id="result-stats"]').should(have.text('Вынікаў каля 0'))
